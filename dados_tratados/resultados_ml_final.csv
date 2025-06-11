@@ -1,0 +1,2 @@
+Modelo,R2_Score,MAE,Features_Principais,Periodo_Previsao,Confianca_%
+Ensemble (RF + GB),0.9557414177624628,0.15642246357669723,"Lag1, Sazonalidade, Tendência",3 meses,89

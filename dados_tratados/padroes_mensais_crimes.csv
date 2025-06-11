@@ -1,0 +1,5 @@
+Estado,Tipo_Crime,Meses_Pico,Meses_Baixa,Variacao_Max_Min_%
+SP,roubo_total,"3,1,5","9,12,11",20.369693629680373
+RJ,roubo_total,"3,5,1","2,9,6",10.348688747328683
+SP,furto_total,"3,8,5","2,12,9",6.959709533613534
+RJ,furto_total,"3,1,2","6,4,11",16.728271740729927

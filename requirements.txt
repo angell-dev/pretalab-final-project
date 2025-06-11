@@ -1,0 +1,21 @@
+# Análise de Dados
+pandas>=1.3.0
+numpy>=1.21.0
+
+# Visualização
+matplotlib>=3.4.0
+seaborn>=0.11.0
+plotly>=5.0.0
+
+# Estatística e Machine Learning
+scipy>=1.7.0
+statsmodels>=0.12.0
+scikit-learn>=0.24.0
+
+# Análise de Séries Temporais
+ruptures>=1.1.0
+
+# Utilitários
+warnings
+os
+datetime
