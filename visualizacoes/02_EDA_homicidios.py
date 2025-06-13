@@ -16,9 +16,6 @@ def preparar_dados_homicidios(df: pd.DataFrame) -> pd.DataFrame:
     """
     print("2. Preparando e limpando dados de homicídios...")
     
-    # --- A SOLUÇÃO DEFINITIVA ---
-    # Baseado no script 03_diagnostico_dados.py, removemos os meses
-    # de Set a Dez de 2021 para SP, pois sabemos que são dados errados (zero).
     print("Removendo dados comprovadamente errados (Homicídios zerados em SP no final de 2021)...")
     condicao_erro = (df['uf'] == 'SP') & (df['ano'] == 2021) & (df['mes'].isin([9, 10, 11, 12]))
     df_corrigido = df[~condicao_erro]
