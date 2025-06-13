@@ -2,7 +2,6 @@ import pandas as pd
 import os
 
 # --- Funções Auxiliares ---
-# É uma boa prática organizar o código em funções para clareza e reutilização.
 
 def carregar_dados_consolidados(caminho_entrada: str) -> pd.DataFrame:
     """
@@ -53,7 +52,6 @@ def limpar_e_preparar_dados(df: pd.DataFrame) -> pd.DataFrame:
     
     # Vamos preencher valores nulos em colunas de crimes com 0.
     # Isso assume que um valor nulo significa 'nenhuma ocorrência registrada'.
-    # É uma premissa importante que devemos validar depois, mas é um bom começo.
     colunas_crimes = ['homicidio_doloso', 'roubo_veiculo', 'furto_veiculo', 'roubo_total', 'furto_total']
     df[colunas_crimes] = df[colunas_crimes].fillna(0)
     print("\nValores nulos nas colunas de crimes preenchidos com 0.")
