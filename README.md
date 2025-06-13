@@ -1,4 +1,4 @@
-# 📊 Análise de Dados em Segurança Pública e Violência contra LGBTQIA+ 🏳️‍🌈
+# 📊 Análise de Dados em Segurança Pública:  Comparativo SP x RJ
 
 ## 🎯 Objetivo do Projeto
 
@@ -9,10 +9,9 @@ Este projeto em grupo tem como objetivo desenvolver habilidades em:
 - Trabalho colaborativo em equipe
 - Interpretação de indicadores sociais
 
-Focamos em dois temas de grande impacto social:
+Focamos no seguinte tema:
 
 1. Segurança Pública
-2. Violência contra a população LGBTQIA+
 
 ## 🌍 Contexto
 
@@ -46,20 +45,9 @@ Este trabalho surge da necessidade de compreender padrões de violência e crimi
 
 ## 📌 Resultados
 
-Principais entregas do projeto:
-
-### Para Segurança Pública:
-
 - [ ] 📈 Análise da evolução dos crimes violentos
 - [ ] 🗺️ Mapeamento de hotspots criminais
 - [ ] ↔️ Correlação com indicadores socioeconômicos
-
-### Para Violência contra LGBTQIA+:
-
-- [ ] 👤 Perfilamento das vítimas
-- [ ] ⚠️ Análise da subnotificação
-- [ ] 🌎 Mapeamento geográfico dos casos
-- [ ] � Análise comparativa entre estados
 
 ## 🤝 Como Contribuir
 
@@ -69,13 +57,12 @@ Principais entregas do projeto:
 
 ## 👥 Equipe
 
-👩💻 [Aghata]()
+👩💻 [Aghata](https://github.com/abentto)
 👩💻 [Angelly](https://github.com/angell-dev)
-👩💻 [Izadora]()
+👩💻 [Izadora](https://github.com/IzaAlves66)
 👩💻 [Louise](https://github.com/louiseluli)
-👩💻 [Patricia]()
+👩💻 [Patricia](https://github.com/Patittaoliver)
 
 ## 📚 Fontes de Dados
 
-- [Lista de fontes utilizadas]
-- [Links para bases de dados]
+- [Link para base de dados](https://www.ibge.gov.br/explica/codigos-dos-municipios.php)
