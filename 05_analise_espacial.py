@@ -69,19 +69,29 @@ def criar_matriz_crimes_municipios(df_recente: pd.DataFrame, df_geral: pd.DataFr
     
     df_metricas = pd.DataFrame(metricas_municipais)
     
-    # Identificar principais municípios (capitais e regiões metropolitanas)
-    principais_municipios = {
-        3550308: 'São Paulo',
-        3304557: 'Rio de Janeiro',
-        3518800: 'Guarulhos',
-        3509502: 'Campinas',
-        3304904: 'São Gonçalo',
-        3303302: 'Nova Iguaçu',
-        3534401: 'Osasco',
-        3301702: 'Duque de Caxias'
-    }
-    
-    df_metricas['nome_municipio'] = df_metricas['id_municipio'].map(principais_municipios).fillna('Outros')
+    # Carregar o mapeamento completo de IDs para nomes de municípios
+    try:
+        path_mapeamento = os.path.join(PASTA_DADOS, 'mapeamento_municipios.csv')
+        
+        df_temp = pd.read_csv(path_mapeamento)
+
+        df_mapeamento = df_temp.iloc[:, 0].str.split(',', expand=True)
+        
+
+        df_mapeamento.columns = ['id_municipio', 'nome_municipio', 'regiao_uf', 'uf']
+
+        df_mapeamento['id_municipio'] = pd.to_numeric(df_mapeamento['id_municipio'])
+
+        municipios_rj_sp = pd.Series(
+            df_mapeamento.nome_municipio.values,
+            index=df_mapeamento.id_municipio
+        ).to_dict()
+
+    except FileNotFoundError:
+        print("\nAVISO: Arquivo 'mapeamento_municipios.csv' não encontrado. Nomes não serão mapeados.")
+        municipios_rj_sp = {}
+
+    df_metricas['nome_municipio'] = df_metricas['id_municipio'].map(municipios_rj_sp).fillna('Outros')
     df_metricas['is_capital'] = df_metricas['id_municipio'].isin([3550308, 3304557]).astype(int)
     
     print(f"Matriz criada com {len(df_metricas)} municípios e {len(df_metricas.columns)-3} características")
@@ -383,6 +393,23 @@ def gerar_relatorio_espacial(df_metricas: pd.DataFrame, pasta_saida: str):
     
     # 1. Relatório de municípios com todas as métricas
     df_municipios = df_metricas.copy()
+    
+    # Define o número de casas decimais para cada coluna de métrica
+    mapa_arredondamento = {
+        'homicidio_media': 2,
+        'homicidio_cv': 4,
+        'roubo_veiculo_media': 2,
+        'furto_veiculo_media': 2,
+        'total_crimes_violentos': 2,
+        'proporcao_roubo_furto': 4,
+        'tendencia_homicidios': 4,
+        'volatilidade_crimes': 2,
+        'indice_criminalidade': 4
+    }
+    
+    # Aplica o arredondamento usando o mapa definido
+    df_municipios = df_municipios.round(decimals=mapa_arredondamento)
+    
     df_municipios.to_csv(os.path.join(pasta_saida, 'analise_espacial_municipios.csv'), index=False)
     
     # 2. Relatório de clusters

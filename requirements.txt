@@ -1,21 +1,25 @@
-# Análise de Dados
-pandas>=1.3.0
-numpy>=1.21.0
+# Arquivo de dependências do projeto de Análise de Segurança Pública
+# Para instalar todas as dependências, execute no seu terminal: pip install -r requirements.txt
 
-# Visualização
-matplotlib>=3.4.0
-seaborn>=0.11.0
-plotly>=5.0.0
+# --- Core para Manipulação de Dados ---
+pandas
+numpy
 
-# Estatística e Machine Learning
-scipy>=1.7.0
-statsmodels>=0.12.0
-scikit-learn>=0.24.0
+# --- Visualização de Dados ---
+matplotlib
+seaborn
+plotly
 
-# Análise de Séries Temporais
-ruptures>=1.1.0
+# --- Leitura de Arquivos Excel (.xls, .xlsx) ---
+# openpyxl é para .xlsx, xlrd é para .xls legados
+openpyxl
+xlrd
 
-# Utilitários
-warnings
-os
-datetime
+# --- Modelagem Estatística e Machine Learning ---
+statsmodels
+scikit-learn
+ruptures
+
+# --- Dependências Adicionais ---
+# Necessário para a funcionalidade de estilização do pandas (.style)
+jinja2
