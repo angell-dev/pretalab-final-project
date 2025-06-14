@@ -61,7 +61,7 @@ Este trabalho surge da necessidade de compreender padrões de violência e crimi
 👩💻 [Angelly](https://github.com/angell-dev)
 👩💻 [Izadora](https://github.com/IzaAlves66)
 👩💻 [Louise](https://github.com/louiseluli)
-👩💻 [Patricia](https://github.com/Patittaoliver)
+👩🏾‍🦱💻 [Patricia](https://github.com/Patittaoliver)
 
 ## 📚 Fontes de Dados
 
