@@ -49,7 +49,7 @@ Este trabalho surge da necessidade de compreender padrões de violência e crimi
 - [ ] 🗺️ Mapeamento de hotspots criminais
 - [ ] ↔️ Correlação com indicadores socioeconômicos
 
-## 🤝 Como Contribuir
+## 🫱🏾‍🫲🏾 Como Contribuir
 
 1. Clone o repositório
 2. Crie um branch para sua contribuição
@@ -57,9 +57,9 @@ Este trabalho surge da necessidade de compreender padrões de violência e crimi
 
 ## 👥 Equipe
 
-👩💻 [Aghata](https://github.com/abentto)
+👩🏾‍🦱💻 [Aghata](https://github.com/abentto)
 👩💻 [Angelly](https://github.com/angell-dev)
-👩💻 [Izadora](https://github.com/IzaAlves66)
+👩🏾‍🦱💻 [Izadora](https://github.com/IzaAlves66)
 👩💻 [Louise](https://github.com/louiseluli)
 👩🏾‍🦱💻 [Patricia](https://github.com/Patittaoliver)
 
