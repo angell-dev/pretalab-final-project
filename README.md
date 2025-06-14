@@ -58,9 +58,9 @@ Este trabalho surge da necessidade de compreender padrões de violência e crimi
 ## 👥 Equipe
 
 👩🏾‍🦱💻 [Aghata](https://github.com/abentto)
-👩💻 [Angelly](https://github.com/angell-dev)
+👩🏾‍🦱💻 [Angelly](https://github.com/angell-dev)
 👩🏾‍🦱💻 [Izadora](https://github.com/IzaAlves66)
-👩💻 [Louise](https://github.com/louiseluli)
+👩🏾‍🦱💻 [Louise](https://github.com/louiseluli)
 👩🏾‍🦱💻 [Patricia](https://github.com/Patittaoliver)
 
 ## 📚 Fontes de Dados
